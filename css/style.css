@@ -86,14 +86,14 @@ nav img{
 
 .liens a{
     padding-top: 17px;
-    border: white, solid;
+    border: white solid;
     border-width: 0;
     border-top-width: 2px;
 }
 
 .liens a:hover{
     color: #0065FC;
-    border: #0065FC, solid;
+    border: #0065FC solid;
     border-width: 0cap;
     border-top-width: 2px;
 }
@@ -114,7 +114,7 @@ header {
     padding-inline-start: 0;
     font-weight: bold;
     font-size: 18px;
-    border: solid, #F2F2F2, 1px;
+    border: solid #F2F2F2 1px;
 }
 
 .formulaire i {
@@ -167,7 +167,7 @@ input:focus {
 }
 
 .filtres li {
-    border: solid, #d9d9d9, 2px;
+    border: solid #d9d9d9 2px;
     border-radius: 25px;
     padding: 8px 15px;
 }
@@ -192,7 +192,7 @@ header h1, p {
 .info i {
     padding: 10px 8px;
     margin-right: 10px;
-    border: solid, #d9d9d9, 1px;
+    border: solid #d9d9d9 1px;
     border-radius: 50px;
     margin-top: 10px;
 }
