@@ -44,7 +44,7 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
@@ -79,19 +79,19 @@ nav img{
     width: 61px;
 }
 
-.liens{
+.links{
     display: flex;
     gap: 70px;
 }
 
-.liens a{
+.links a{
     padding-top: 17px;
     border: white solid;
     border-width: 0;
     border-top-width: 2px;
 }
 
-.liens a:hover{
+.links a:hover{
     color: #0065FC;
     border: #0065FC solid;
     border-width: 0cap;
@@ -104,7 +104,26 @@ header {
     margin: 30px 0;
 }
 
-.formulaire {
+header h2 {
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+header h1, p {
+    margin: 8px 0;
+}
+
+.info i {
+    padding: 10px 8px;
+    margin-right: 10px;
+    border: solid #d9d9d9 1px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+/****** formulaire ***********/
+
+form {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -117,7 +136,7 @@ header {
     border: solid #F2F2F2 1px;
 }
 
-.formulaire i {
+form i {
     padding: 13px 17px;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
@@ -125,7 +144,7 @@ header {
     padding-bottom: 18px;
 }
 
-.ville {
+.city {
     padding: 13px 22.5px;
     border-width: 0;
     font-weight: bold;
@@ -137,7 +156,7 @@ input:focus {
     outline: none;
 }
 
-.recherche {
+.search {
     padding: 13px 17px 14px 19px;
     background-color: #0065FC;
     color: white;
@@ -148,9 +167,11 @@ input:focus {
     border-width: 0;
 }
 
-.recherche:hover {
+.search:hover {
     background-color: #003bfc;
 }
+
+/****** filtres ***********/
 
 .filtres {
     margin-top: 22px;
@@ -180,23 +201,6 @@ input:focus {
     padding: 5px;
 }
 
-header h2 {
-    padding: 15px 0;
-    font-size: 18px;
-}
-
-header h1, p {
-    margin: 8px 0;
-}
-
-.info i {
-    padding: 10px 8px;
-    margin-right: 10px;
-    border: solid #d9d9d9 1px;
-    border-radius: 50px;
-    margin-top: 10px;
-}
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -205,14 +209,66 @@ header h1, p {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** Hébergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-title {
+    margin-top: 0;
+    margin-bottom: 33px;
+    font-size: 22px;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.hebergements-cards img {
+    width: 240px;
+    height: 115px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+margin: 9px 0;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+    font-size: 14px;
+}
+
+.hebergements-cards .card-rating {
+    margin: 5px 0;
+}
+
+.show-more {
+    font-weight: bold;
+    font-size: 18px;
+
 }
 
 /****** Populaires ***********/
@@ -260,8 +316,59 @@ header h1, p {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
 
+.Activities {
+    margin: 60px 30px;
+}
 
+.Activities h2 {
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+.Activities-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.Activities-cards img {
+    width: 297px;
+    height: 380px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.Activities-cards .card {
+    padding: 0;
+}
+
+.Activities-cards .card-title {
+    padding: 18px;
+    margin: 0;
+}
+
+/****** Footer ***********/
+
+Footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+}
+
+Footer ul {
+    padding-left: 0;
+    margin: 0;
+    width: 34%;
+}
+
+Footer li {
+    margin: 15px 20px;
+}
+
+Footer h2 {
+    font-size: 18px;
+    margin-top: 22px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
