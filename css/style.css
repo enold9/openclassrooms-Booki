@@ -94,7 +94,7 @@ nav img{
 .links a:hover{
     color: #0065FC;
     border: #0065FC solid;
-    border-width: 0cap;
+    border-width: 0;
     border-top-width: 2px;
 }
 
@@ -113,12 +113,22 @@ header h1, p {
     margin: 8px 0;
 }
 
+.info {
+    display: flex;
+    align-items: center;
+}
+
 .info i {
-    padding: 10px 8px;
+    padding: 12px 10px;
     margin-right: 10px;
     border: solid #d9d9d9 1px;
     border-radius: 50px;
     margin-top: 10px;
+}
+
+.info p {
+    margin-top: 14px;
+    margin-bottom: 4px;
 }
 
 /****** formulaire ***********/
@@ -126,7 +136,6 @@ header h1, p {
 form {
     display: flex;
     flex-direction: row;
-    justify-content: left;
     margin-top: 33px;
     width: 28%;
     border-radius: 15px;
@@ -184,6 +193,7 @@ input:focus {
 .filtres ul{
     padding-inline-start: 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -229,6 +239,7 @@ input:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .hebergements-cards .card {
@@ -238,7 +249,7 @@ input:focus {
 }
 
 .hebergements-cards img {
-    width: 240px;
+    width: 100%;
     height: 115px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -268,7 +279,6 @@ margin: 9px 0;
 .show-more {
     font-weight: bold;
     font-size: 18px;
-
 }
 
 /****** Populaires ***********/
@@ -318,32 +328,33 @@ margin: 9px 0;
 
 /****** Activités ***********/
 
-.Activities {
+.Activites {
     margin: 60px 30px;
 }
 
-.Activities h2 {
+.Activites h2 {
     font-size: 22px;
     margin-bottom: 35px;
 }
 
-.Activities-cards {
+.Activites-cards {
     display: flex;
     gap: 30px;
+    overflow-y: hidden;
 }
 
-.Activities-cards img {
+.Activites-cards img {
     width: 297px;
     height: 380px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 
-.Activities-cards .card {
+.Activites-cards .card {
     padding: 0;
 }
 
-.Activities-cards .card-title {
+.Activites-cards .card-title {
     padding: 18px;
     margin: 0;
 }
@@ -370,44 +381,5 @@ Footer h2 {
     margin-top: 22px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
 
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-}
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
-}
