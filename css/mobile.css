@@ -7,6 +7,10 @@
         padding: 0;
     }
 
+    .card:hover {
+        transform: scale(1.05); 
+    }
+
     /* nav */
 
     nav {
