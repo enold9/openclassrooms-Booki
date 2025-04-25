@@ -36,6 +36,25 @@ a {
     text-decoration: none;
 }
 
+.card:hover {
+    transform: scale(1.1);              
+    transition: .2s;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.2));
+}  
+
+/* y'a ça pour zoomer dans l'image sans que les dimensions de change
+mais il faut mettre toutes les images dans des div et redimensionner 
+ces div pour les 3 tailles d'image (ou au moins les border radius)
+
+img:hover {
+    transform: scale(1.2);
+    transition: .2s;   
+}                           
+
+.wrapper {
+    overflow: hidden;    
+} */
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -330,7 +349,7 @@ margin: 9px 0;
 /****** Activités ***********/
 
 .Activites {
-    margin: 60px 30px;
+    margin: 35px 5px;
 }
 
 .Activites h2 {
@@ -341,11 +360,18 @@ margin: 9px 0;
 .Activites-cards {
     display: flex;
     gap: 30px;
-    overflow-y: hidden;
+    padding: 25px;
 }
 
 .Activites-cards img {
-    width: 297px;
+    width: 100%;
+    height: 306px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.Activites-cards a {
+    width: 100%;
     height: 380px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
