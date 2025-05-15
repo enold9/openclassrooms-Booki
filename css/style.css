@@ -245,7 +245,6 @@ input:focus {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    height: 614px;
 }
 
 .hebergements-and-populaires section {
